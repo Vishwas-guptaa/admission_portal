@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Portal</title>
+    <!--bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--my css-->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-sucess fixed-top">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand">
+                <img src="https://mits-admission-portal.onrender.com/assets/images/logo.png" class="weblogo w-50 text-center" >
+
+            </a>
+            <!--mobile view-->
+            <button class="navbar-toggler" data-bs-target="#a" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--menu-->
+            <div class="navbar-collapse collapse" id="a">
+                <ul class="navbar-nav ms-auto c">
+                    <li><a href="/home" class="nav-link">HOME</a></li>
+                    <li><a href="/about" class="nav-link">ABOUT</a></li>
+                    <li><a href="/contact" class="nav-link">CONTACT</a></li>
+                    <li><a href="/logout" class="nav-link">LOGOUT</a></li>
+                  <li><a href="login.html" class="btn btn-success"><%=n %> </a></li>
+                    <img src="<%= i.url %>" width="100px" height="50px">
+
+                </ul>
+            </div>
+        </div><!--container end-->
+    </nav><!--nav end-->
+    

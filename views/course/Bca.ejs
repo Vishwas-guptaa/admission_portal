@@ -1,0 +1,142 @@
+<%- include('../header.ejs') %>
+
+    <section>
+        <div class="container" style="margin-top: 100px;">
+            <h1 class="text-center pt-5">BCA Registration Form</h1>
+            <h1 class="text-center text-uppercase pb-2" style="color:#ed5a25;">Do Register!</h1>
+            <p class="text-center" style="color: #fff; background-color: #35b9dd;">In Case any query, Kindly Contact:
+                7974978812</p>
+            <div class="row">
+                <div class="col-lg-6" style="margin-top:-px;">
+                    <!-- Slider Div start -->
+                    <div class="carousel slide" data-bs-ride="carousel" id="a">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#a" data-bs-slide-to="0" class="active"
+                                aria-current="true"></button>
+                            <button type="button" data-bs-target="#a" data-bs-slide-to="1" class=""></button>
+                            <button type="button" data-bs-target="#a" data-bs-slide-to="2" class=""></button>
+                        </div>
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+
+                                <img src="https://mits-admission-portal.onrender.com/assets/images/registration_form1.jpg"
+                                    width="100%" height="700px" alt="..." style="background-position:center;">
+                                <div class="carousel-caption">
+
+                                </div>
+                                <!--carousel-caption-->
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="2000">
+
+                                <img src="https://mits-admission-portal.onrender.com/assets/images/registration_form3.jpg"
+                                    width="100%" height="700px" alt="..." style="background-position:center;">
+                                <div class="carousel-caption">
+
+                                </div>
+                                <!--carousel-caption-->
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="2000">
+
+                                <img src="https://mits-admission-portal.onrender.com/assets/images/registration_form2.jpg"
+                                    width="100%" height="700px" alt="..." style="background-position:center;">
+                                <div class="carousel-caption">
+
+                                </div>
+                                <!--carousel-caption-->
+                            </div>
+                        </div>
+                        <!--carousel-inner-->
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#a" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#a" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                </div><!-- Slider Div end -->
+                <div class="col-lg-6">
+                   
+                            <form action="/insertbca" method="post">
+                                <!-- <input type="text" name="user_id" value="63d7e900bbbd5724d5f2d06d"> -->
+                                <div class="mb-3 mt-1">
+                                    <label class="mb-2">Username:</label>
+                                    <input type="text" name="name" value="<%= n %>" class="form-control enter_name"
+                                        placeholder="Enter name" style="border:1px solid #35b9dd">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2">Email:</label>
+                                    <input type="email" name="email" value="<%= e %>" class="form-control"
+                                        placeholder="Enter Email" style="border-radius: 25px; border:1px solid #35b9dd">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2">Mobile No.</label>
+                                    <input type="number" name="mobile" class="form-control"
+                                        placeholder="Enter Mobile Number"
+                                        style="border-radius: 25px; border:1px solid #35b9dd">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="mb-2">D.O.B:</label>
+                                    <input type="date" name="dob" class="form-control"
+                                        style="border-radius: 25px; border:1px solid #35b9dd;">
+                                </div>
+                                <div class="mb-3 ">
+                                    <label class="mb-2">Gender</label>
+                                    <br>
+                                    <input type="radio" name="gender" value="male">&nbsp;Male
+                                    <input type="radio" name="gender" value="female">&nbsp;Female
+                                    <br>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Address:</label>
+                                    <textarea class="form-control" name="address"
+                                        style="border-radius: 25px; border:1px solid #35b9dd"></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Select College</label>
+                                    <select name="collage" class="form-control"
+                                        style="border-radius: 25px; border:1px solid #35b9dd">
+                                        <option>Select</option>
+                                        <option>MITS</option>
+                                        <option>RJIT</option>
+                                        <option>ITM</option>
+                                        <option>NITM</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Course</label>
+                                    <select name="subject" class="form-control"
+                                        style="border-radius: 25px; border:1px solid #35b9dd">
+                                        <option>Select</option>
+                                        <option>BCA</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label>Branch</label>
+                                    <select name="branch" class="form-control"
+                                        style="border-radius: 25px; border:1px solid #35b9dd">
+                                        <option>Select</option>
+                                        <option>CSE</option>
+                                        <option>IT</option>
+                                        <option>EC</option>
+                                        <option>ET</option>
+                                        <option>ME</option>
+                                        <option>EE</option>
+                                    </select>
+                                </div>
+
+                                <div class="text-center ">
+                                    <button class="btn my-4" style="background-color: #35b9dd; color:#fff;"
+                                        type="submit">Submit</button>
+                                </div>
+                            </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    

@@ -1,0 +1,73 @@
+<%- include('../header.ejs') %>
+<br><br><br><br>
+
+<div class="container mt-5">
+    <div class="table-responsive">
+        
+        <table class="table table-bordered">
+            <thead>
+              <h1 class="text-center mb-3">Display</h1>
+                <tr>
+                    
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact</th>
+                    <th>DOB</th>
+                    <th>Gender</th>
+                    <th>Address</th>
+                    <th>Collage</th>
+                    <th>Subject</th>
+                    <th>Branch</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% Bca.forEach((item)=>{ %>
+                    <tr>
+                       
+                        <td>
+                            <%= item.name %>
+                        </td>
+                        <td>
+                            <%= item.email %>
+                        </td>
+                        <td>
+                            <%= item. mobile %>
+                        </td>
+                        <td>
+                          <%= item.dob %>
+                      </td>
+                      <td>
+                          <%= item.gender %>
+                      </td>
+                      <td>
+                          <%= item. address %>
+                      </td>
+                      <td>
+                        <%= item.collage %>
+                    </td>
+                    <td>
+                        <%= item.subject %>
+                    </td>
+                    <td>
+                        <%= item.branch %>
+                    </td>
+                    <td>
+                      pending
+                  </td>
+
+                        <td class="d-fless">
+                            <a href="" class="btn btn-info">View</a>
+                            <a href="" class="btn btn-primary">Edit</a>
+                            <a href="" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+
+                    <% }) %>
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
