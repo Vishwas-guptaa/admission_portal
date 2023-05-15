@@ -39,11 +39,23 @@
             <div class="navbar-collapse collapse" id="a">
                 <ul class="navbar-nav ms-auto c">
                     <li><a href="/home" class="nav-link">HOME</a></li>
-                    <li><a href="/about" class="nav-link">ABOUT</a></li>
-                    <li><a href="/contact" class="nav-link">CONTACT</a></li>
-                    <li><a href="/logout" class="nav-link">LOGOUT</a></li>
-                  <li><a href="login.html" class="btn btn-success"><%=n %> </a></li>
-                    <img src="<%= i.url %>" width="100px" height="50px">
+                    <li><a href="" class="nav-link">ABOUT</a></li>
+                    <li><a href="" class="nav-link">CONTACT</a></li>
+                    <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle px-5" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                         <%=n %>
+                         
+                        </button>
+                        <img src="<%= i.url %>"  style="width: 100px; height: 50px;border-radius: 50%;" >
+                        <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="/profiledashboard">Dashboard</a></li>
+                          <li><a class="dropdown-item" href="/editprofile">Edit Profile</a></li>
+                          <li><a class="dropdown-item" href="/changepass">Change Password</a></li>
+                          <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                        </ul>
+                      </div>
+                     <!-- <li><a href="" class="btn btn-success"><%=n %> </a></li> -->
+                   
 
                 </ul>
             </div>

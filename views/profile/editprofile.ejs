@@ -1,0 +1,42 @@
+<%- include('../header.ejs') %>
+
+    <br><br><br>
+    <br>
+    <div class="container mb-5 shadow-lg mt-5 ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-4 mt-5 py-5">
+                        <div class="profile-img-container">
+                            <img src="<%= i.url %>" alt="Profile Picture" class="profile-img w-100  ">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="text-success mt-4 mb-3"> Edit Profile </h1>
+                        <form action="/profileupdate" method="post" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <label for="">Name</label>
+                                <input type="text" class="form-control" name="name" value="<%= n %>">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Email</label>
+                                <input type="email" class="form-control" name="email" value="<%= e %>">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Phone</label>
+                                <input type="number" class="form-control" name="mobile" value="<%= m %>">
+                            </div>
+                            <div class="mb-3">
+                                <label for="">Upload Image</label>
+                                <input type="file" name="image" class="form">
+                            </div>
+                            <button type="submit" class="btn btn-success mt-4 mb-3">Update Profile</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>

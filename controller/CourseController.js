@@ -1,4 +1,4 @@
-const CourseModel = require("../modals/course");
+const CourseModel = require("../modals/Course");
 
 class CourseController {
   static course_bca = async (req, res) => {
@@ -18,6 +18,29 @@ class CourseController {
       const result = await CourseModel.find({ user_id: _id });
       res.render("Bca/display", { Bca: result, n: name, i: image });
       //console.log(result)
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  static bcacourseview = async (req, res) => {
+    try {
+      const { name, image, user_id } = req.user;
+      // console.log(req.params.id)
+      const result = await CourseModel.findById(req.params.id);
+      //console.log(result);
+      res.render("Bca/view", { bca: result, n: name, i: image });
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  static bcacouresedit = async (req, res) => {
+    try {
+      const { name, image, user_id } = req.user;
+      //console.log("first");
+      const result = await CourseModel.findById(req.params.id);
+      res.render("Bca/edit", { bca: result, n: name, i: image });
     } catch (error) {
       console.log(error);
     }

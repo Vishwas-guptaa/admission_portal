@@ -11,13 +11,21 @@ const UserSchema = new mongoose.Schema({
             type:String,
             require:true,
          },
+         mobile:{
+            type:Number,
+            require:true,
+         },
          image:{
             public_id:{
-               type:String
+               type:String 
              },
              url:{
                type:String
              }
+         },
+         role:{
+            type:String,
+            default :'student'
          },
          password:{
             type:String,

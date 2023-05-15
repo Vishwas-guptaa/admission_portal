@@ -1,0 +1,46 @@
+<%- include('../header.ejs') %>
+
+    <br><br><br>
+    <br>
+    <div class="container mb-5 shadow-lg mt-5 ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+
+                    <div class="col-md-4 mt-5 py-5">
+                        <div class="profile-img-container">
+                            <img src="<%= i.url %>" alt="Profile Picture" class="profile-img w-100  ">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <h1 class="text-success mt-4 mb-3"> Change Password </h1>
+                        <% if(message.length> 0 ){ %>
+                            <div class="alert alert-danger">
+                                <%= message %>
+                            </div>
+                            <% } %>
+                                <form action="/userchangepassword" method="post">
+                                    <div class="mb-3">
+                                        <label for="">Old Password</label>
+                                        <input type="text" class="form-control" name="old_password" value="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="">New Password</label>
+                                        <input type="password" class="form-control" name="new_password" value="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="">Confirm Password</label>
+                                        <input type="password" class="form-control" name="cpassword" value="">
+                                    </div>
+
+                                    <button type="submit" class="btn btn-success mt-4 mb-3">Update Password</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <%- include('../fotter.ejs') %>

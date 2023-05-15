@@ -1,0 +1,26 @@
+<%- include('../header.ejs') %>
+<br><br><br>
+<br>
+<div class="container mb-5 shadow-lg mt-5 ">
+    <div class="row">
+      <div class="col-md-4 mt-5 py-5" >
+        <div class="profile-img-container">
+          <img src="<%= i.url %>" alt="Profile Picture" class="profile-img ">
+        </div>
+      </div>
+      <div class="col-md-8">
+        <h1 class="text-success mt-4 ">Profile Dashboard</h1>
+        <ul class="list-group">
+          <li class="list-group-item"><strong>Name:</strong> <%= n %></li>
+          <li class="list-group-item"><strong>Email:</strong> <%= e %></li>
+          <li class="list-group-item"><strong>Phone:</strong><%= m %> </li>
+          <li class="list-group-item"><strong>Course:</strong> MCA</li>
+          
+        </ul>
+       <br><br>
+       
+      </div>
+    </div>
+  </div>
+
+  
